@@ -3,6 +3,7 @@ class Livre {
     this.title = title;
     this.author = author;
     this.year = year;
+    this.id = Date.now();
   }
 
   render() {
@@ -12,6 +13,9 @@ class Livre {
       <h2>${this.title}</h2>
       <p>Auteur: ${this.author}</p>
       <p>Année: ${this.year}</p>
+      
+      <button class="delete-button">Supprimer</button>
+      
     `;
     return div;
   }
